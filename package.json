@@ -1,0 +1,21 @@
+{
+  "name": "understanding-the-basics-take-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jripke74/understanding-the-basics-take-2.git"
+  },
+  "author": "Jeff Ripke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jripke74/understanding-the-basics-take-2/issues"
+  },
+  "homepage": "https://github.com/jripke74/understanding-the-basics-take-2#readme"
+}
