@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jripke74/understanding-the-basics-take-2/issues"
   },
-  "homepage": "https://github.com/jripke74/understanding-the-basics-take-2#readme"
+  "homepage": "https://github.com/jripke74/understanding-the-basics-take-2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
