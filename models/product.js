@@ -55,7 +55,7 @@ class Product {
       })
       .catch(err => {
       console.log(err);
-    })
+    });
   }
 
   static deleteById(prodId) {
