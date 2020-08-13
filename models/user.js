@@ -7,7 +7,7 @@ class User {
   constructor(username, email, cart, id) {
     this.name = username;
     this.email = email;
-    this.cart = cart;
+    this.cart = cart; // {items: []}
     this._id = id;
   }
 
@@ -27,16 +27,19 @@ class User {
       newQuantity = this.cart.items[cartProductIndex].quantity + 1;
       updatedCartItems[cartProductIndex].quantity = newQuantity;
     } else {
-      updatedCartItems.push([
-        { productId: new Object(product._id), quantity: newQuantity },
-      ]);
+      updatedCartItems.push({ 
+        productId: new ObjectId(product._id), 
+        quantity: newQuantity 
+      });
     }
     const updatedCart = {
       items: updatedCartItems,
     };
     const db = getDb();
-    db.collection('users').updateOne(
-      { _id: new Object(this._id) },
+    return db
+      .collection('users')
+      .updateOne(
+      { _id: new ObjectId(this._id) },
       { $set: { cart: updatedCart } }
     );
   }
